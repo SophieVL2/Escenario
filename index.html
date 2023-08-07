@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web Básica</title>
+    <title>Tu Tienda en Línea</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,28 +12,128 @@
             background-color: #f0f0f0;
         }
         header {
-            background-color: #333;
+            background-color: #13492C;
             color: #fff;
             text-align: center;
             padding: 1em 0;
         }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .hero-section {
+            background-color: #13492C;
+            color: #fff;
+            text-align: center;
+            padding: 4em 0;
+        }
+        .about-container {
+            background-color: #f0f0f0; /* Cambia este color según tus preferencias */
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 2em;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .container h2 {
+            font-size: 24px;
+            margin-bottom: 1em;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .product {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 1em;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product h3 {
+            font-size: 20px;
+            margin-bottom: 0.5em;
+        }
+        .product p {
+            font-size: 16px;
+            margin-bottom: 0.5em;
+        }
+        .catalog-container {
+            background-color: #f9e6a4; /* Cambia este color según tus preferencias */
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 2em 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Mi Página Web</h1>
-        <p>Bienvenido a mi sitio web básico</p>
+    
     </header>
-    <div class="container">
-        <h2>Sobre mí</h2>
-        <p>¡Hola! Soy [Tu Nombre], y esta es mi página web básica.</p>
-        <h2>Contacto</h2>
-        <p>Puedes contactarme en mi correo electrónico: correo@example.com</p>
+
+    <div class="hero-section">
+        <h1>SECONDITE</h1>
+        <p>"ROPA CON HISTORIA"</p>
     </div>
-</body>
+        
+    <section id="acerca">
+        <div class="about-container">
+            <div class="container">
+                <h2>Acerca de nosotros</h2>
+                <p>Somos Secondite, una tienda en línea dedicada a ofrecer moda de segunda mano de alta calidad y estilo. Nuestro objetivo es promover la moda sostenible y ayudar a reducir el impacto ambiental de la industria textil.</p> 
+            </div>
+        </div>
+    </section>
+    
+    <div class="divider"></div>
+    
+    <section id="catalogo">
+        <div class="container">
+            <h2>Catálogo de productos</h2>
+            <div class="catalog-container">
+                <div class="product-grid">
+                    <div class="product">
+                        <h3><a href="producto-vintage.html" class="product-link">Vestido Vintage</a></h3>
+                        <p>Un elegante vestido vintage con un toque moderno. Talla: M</p>
+                        <p>Precio: $50</p>
+                    </div>
+                    <div class="product">
+                        <h3><a href="producto-camiseta.html" class="product-link">Camiseta Estampada</a></h3>
+                        <p>Una camiseta cómoda y estilizada con estampado único. Talla: S</p>
+                        <p>Precio: $25</p>
+                    </div>
+                    <div class="product">
+                        <h3><a href="producto-zapatos.html" class="product-link">Zapatos Retro</a></h3>
+                        <p>Zapatos retro de cuero genuino que combinan comodidad y moda. Talla: 38</p>
+                        <p>Precio: $60</p>
+                    </div>
+                    <!-- Agrega más productos aquí -->
+                </div>
+            </div>
+        </div>
+    </section>
+  
+ </body>
 </html>
